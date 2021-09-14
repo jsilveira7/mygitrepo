@@ -1,31 +1,6 @@
 {
 	"name": "pipeline1",
 	"properties": {
-		"activities": [
-			{
-				"name": "Notebook1",
-				"type": "DatabricksNotebook",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"notebookPath": "/Users/silveirajoao@microsoft.com/CreateTableFromCSV",
-					"baseParameters": {
-						"input": "yes"
-					}
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks_LinkedService",
-					"type": "LinkedServiceReference"
-				}
-			}
-		],
 		"annotations": [],
 		"lastPublishTime": "2021-09-02T11:30:17Z"
 	},
